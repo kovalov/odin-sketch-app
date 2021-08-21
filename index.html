@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Etch-a-Sketch App</title>
+  </head>
+  <body class="page">
+    <div class="page__wrapper">
+      <header class="header">
+        <h1 class="header__title">Etch-a-Sketch</h1>
+      </header>
+      <main class="main">
+        <div class="settings">
+          <input type="color" name="color-picker" id="" class="color-picker" />
+          <button class="button button--bw">BW Mode</button>
+          <button class="button button--rainbow">Rainbow Mode</button>
+          <div class="size-picker">
+            <div class="size-picker__counter">16</div>
+            <input
+              type="range"
+              name="size-picker"
+              id=""
+              class="size-picker__control"
+              max="32"
+              min="1"
+              value="16"
+            />
+          </div>
+          <button class="button button--eraser">Eraser</button>
+          <button class="button button--clear">Clear</button>
+        </div>
+        <div class="grid"></div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
